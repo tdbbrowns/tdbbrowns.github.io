@@ -8,11 +8,13 @@ body{
 .content{
     width: 80%;
     margin: auto;
-    background-color: white;
 }
 .row{
     width: 100%;
     float: left;
+}
+.mau{
+    background-color: white;
 }
 .row::after{
     display: block;
@@ -248,8 +250,16 @@ body{
     width: 20px;
     height: 20px;
     border-radius: 50% ;
+    border: 2px solid black;
     display: inline-block;
     background: rgb(0, 140, 255);
+}
+.kynang .ht2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50% ;
+    display: inline-block;
+    border: 2px solid black;
 }
 .mbt{
     margin-bottom: 20px;
