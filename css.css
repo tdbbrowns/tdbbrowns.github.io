@@ -1,0 +1,362 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+.row{
+    width: 100%;
+    float: left;
+}
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.col-3{
+    width: 25%;
+    float: left;
+}
+.col-4{
+    width: 33.33%;
+    float: left;
+}
+.col-5{
+    width: 41.66%;
+    float: left;
+}
+.col-6{
+    width: 50%;
+    float: left;
+}
+.col-7{
+    width: 58.33%;
+    float: left;
+}
+.col-8{
+    width: 66.66%;
+    float: left;
+}
+.col-9{
+    width: 75%;
+    float: left;
+}
+.col-10{
+    width: 83.33%;
+    float: left;
+}
+.col-11{
+    width: 91.66%;
+    float: left;
+}
+.row .col-3 .info{
+    width: 100%;
+    height: 600px;
+    padding: 15px;
+
+    font-weight: bold;
+}
+.row .col-3 .info .avata{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+.content .tonginfo:hover .info-hover{
+    display:block;
+}
+.row .col-3 .info .avata img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.info1{
+    border-bottom: 1px solid black;
+}
+.info2{
+    border-bottom: 1px solid black;
+}
+.info3{
+    text-align: center;
+}
+.info svg{
+    margin-right: 15px;
+}
+.sao{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    border-radius: 50%;
+    animation: sao 3s infinite;
+    z-index: 3;
+}
+@keyframes sao{
+    25%{
+        transform: scale(2);
+    }
+    50%{
+        top: 100%;
+        background-color: rgb(189, 216, 69);
+    }
+    75%{
+        top:100%;
+        left: 0;
+        transform: translate(-50%,-50%);
+        background-color: rgb(60, 164, 233);
+    }
+    100%{
+        top:100%;
+        left: 100%;
+        transform: translate(-50%,-50%);
+    }
+}
+.sao1{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    animation: sao1 3s infinite;
+    z-index: 3;
+}
+@keyframes sao1{
+    25%{
+        transform: scale(2);
+    }
+    50%{
+        bottom: 100%;
+        background-color: rgb(189, 216, 69);
+    }
+    75%{
+        bottom: 100%;
+        right: 0;
+        transform: translate(50%,50%);
+        background-color: rgb(60, 164, 233);
+    }
+    100%{
+        bottom: 100%;
+        right: 100%;
+        transform: translate(50%,50%);
+    }
+}
+.tonginfo{
+    width: 100%;
+    height: 600px;
+    padding: 15px;
+    background: #F3F3F3;
+    position: relative;
+    font-weight: bold;
+}
+.row .col-3 .info-hover{
+    width: 100%;
+    height: 600px;
+    padding: 15px;
+    background: #F3F3F3;
+    position: absolute;
+    font-weight: bold;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;  
+}
+.runlever{
+    width: 80%;
+    height: 20px;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.runlever1{
+    width: 30%;
+    height: 18px;
+    position: absolute;
+    background-color: rgb(0, 140, 255);
+    animation: runlever 3s;
+}
+.runlever2{
+    width: 10%;
+    height: 18px;
+    position: absolute;
+    background-color: rgb(0, 140, 255);
+    animation: runlever 3s;
+}
+.runlever3{
+    width: 40%;
+    height: 18px;
+    position: absolute;
+    background-color: rgb(0, 140, 255);
+    animation: runlever 3s;
+}
+.runlever4{
+    width: 90%;
+    height: 18px;
+    position: absolute;
+    background-color: rgb(0, 140, 255);
+    animation: runlever 3s;
+}
+@keyframes runlever{
+    0%{
+        width: 0;
+    }
+}
+.noidungcv{
+    width: 100%;
+    padding-left: 10px;
+}
+.hoten{
+    padding: 10px; 
+}
+.hoten h1{
+    border-bottom: 1px solid black;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+.hoten h2{
+    color: rgb(46, 74, 231);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.kynang p{
+    display: inline-block;
+    font-size: 23px;
+    margin: 0;
+    margin-right: 23px;
+    padding: 0;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.kynang .ht1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50% ;
+    display: inline-block;
+    background: rgb(0, 140, 255);
+}
+.mbt{
+    margin-bottom: 20px;
+}
+.kynang {
+    padding: 10px;
+}
+.kynang h2{
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+.kinhnghiemlamviec{
+    padding: 10px;
+}
+.kinhnghiemlamviec h2{
+    border-bottom: 1px solid black;
+}
+.kinhnghiemlamviec .kn-left{
+    width: 100%;
+    height: 135px;
+    border-right: 1px solid black;
+}
+.kinhnghiemlamviec .kn-left p{
+    color: rgb(155, 153, 151);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 100px;
+}
+.kinhnghiemlamviec .kn-right{
+    padding: 10px;
+}
+.kinhnghiemlamviec .kn-right p{
+    margin: 0;
+    padding: 0;
+    color: rgb(155, 153, 151);
+    font-size: 22px;
+}
+.kinhnghiemlamviec .kn-right .tieude{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.kinhnghiemlamviec .kn-right ul li{
+    font-size: 18px;
+}
+.hocvan{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.hocvan h2{
+    border-bottom: 1px solid black;
+}
+.hocvan .hv-left{
+    width: 100%;
+    height: 180px;
+    border-right: 1px solid black;
+}
+.hocvan .hv-left p{
+    color: rgb(155, 153, 151);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 140px;
+}
+.hocvan .hv-right{
+    padding: 10px;
+}
+.hocvan .hv-right p{
+    margin: 0;
+    padding: 0;
+    color: rgb(155, 153, 151);
+    font-size: 22px;
+}
+.hocvan .hv-right .tieude{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+.giaithuong{
+    padding: 10px;
+}
+.giaithuong h2{
+    border-bottom: 1px solid black;
+}
+.giaithuong .gt-left{
+    width: 100%;
+    height: 120px;
+    border-right: 1px solid black;
+}
+.giaithuong .gt-left p{
+    color: rgb(155, 153, 151);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 80px;
+}
+.giaithuong .gt-right{
+    padding: 10px;
+}
+.giaithuong .gt-right p{
+    margin: 0;
+    padding: 0;
+    color: rgb(155, 153, 151);
+    font-size: 22px;
+}
+.giaithuong .gt-right .tieude{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
